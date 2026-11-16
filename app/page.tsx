@@ -9,6 +9,8 @@ import {
   ScanText,
   Minimize2,
   Files,
+  Presentation,
+  FileOutput,
   Sparkles,
   ArrowUpRight,
   ShieldCheck,
@@ -89,6 +91,24 @@ export default function Home() {
       shadow: "shadow-sky-500/25",
       href: "/merge",
     },
+    {
+      title: "PDF to PowerPoint",
+      badge: "SLIDES",
+      desc: "Convert PDF pages into a clean, high-resolution PowerPoint (.pptx) presentation",
+      icon: <Presentation className="w-7 h-7 text-white" />,
+      gradient: "from-amber-500 to-red-600",
+      shadow: "shadow-orange-500/25",
+      href: "/pdf-to-ppt",
+    },
+    {
+      title: "PowerPoint to PDF",
+      badge: "DECK",
+      desc: "Turn PowerPoint (.pptx) presentations into portable, shareable PDF files",
+      icon: <FileOutput className="w-7 h-7 text-white" />,
+      gradient: "from-red-500 to-rose-600",
+      shadow: "shadow-rose-500/25",
+      href: "/ppt-to-pdf",
+    },
   ];
 
   return (
@@ -141,7 +161,7 @@ export default function Home() {
           <h2 className="text-lg sm:text-xl font-bold text-slate-800">
             All-in-One Smart Tools
           </h2>
-          <span className="text-xs font-medium text-slate-500">8 Tools Ready</span>
+          <span className="text-xs font-medium text-slate-500">10 Tools Ready</span>
         </div>
 
         {/* VIP Cards Grid */}
