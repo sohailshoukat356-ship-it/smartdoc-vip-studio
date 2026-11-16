@@ -13,21 +13,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SmartDoc VIP Studio - All-in-One Document Scanner & Converter",
+  title: "SmartDoc | Free Online PDF, Word, Excel & PPT Tools",
   description:
-    "Scan, compress, convert, and edit PDF, Word, Excel, and Images effortlessly in one unified workspace.",
+    "Scan, compress, merge, convert, and edit PDF, Word, Excel, PPT, and Images effortlessly in one unified workspace. 100% free and private.",
+  applicationName: "SmartDoc",
   verification: {
     google: "8rzF7pEuMrgBtUcZ5Z_TVEH132OQd2otILImNVs3iZA",
+  },
+  openGraph: {
+    title: "SmartDoc — Complete Online Document Studio",
+    description:
+      "Convert, merge, compress, scan, and edit PDF, Word, Excel & PPT files online for free.",
+    siteName: "SmartDoc",
+    type: "website",
   },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "SmartDoc",
+    alternateName: "SmartDoc VIP Studio",
+    url: "https://smartdoc-vip-studio.vercel.app/",
+  };
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
