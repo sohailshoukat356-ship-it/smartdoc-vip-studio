@@ -11,7 +11,6 @@ import {
   Files,
   Presentation,
   FileOutput,
-  Sparkles,
   ArrowUpRight,
   ShieldCheck,
   Zap,
@@ -117,15 +116,15 @@ export default function Home() {
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-slate-200/70">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-600/30">
-              <Sparkles className="w-5 h-5 text-white" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-700 flex flex-col items-center justify-center shadow-lg shadow-blue-600/30 text-white leading-none">
+              <span className="font-black text-sm tracking-tighter">SD</span>
+              <span className="text-[7px] font-extrabold bg-amber-400 text-slate-900 px-1 rounded mt-0.5">
+                DOC
+              </span>
             </div>
             <div>
               <span className="font-extrabold text-xl tracking-tight bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
                 SmartDoc
-              </span>
-              <span className="ml-1.5 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">
-                VIP Studio
               </span>
             </div>
           </div>
