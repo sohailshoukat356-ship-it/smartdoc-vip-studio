@@ -149,7 +149,7 @@ export default function Home() {
               Your Complete <span className="text-blue-400">Document Studio</span>
             </h1>
             <p className="text-slate-300 mt-3 text-sm sm:text-base leading-relaxed">
-              Scan, compress, convert, and edit all your files effortlessly. Professional tools for PDF, Word, Excel, and Images in one unified workspace.
+              Scan, compress, merge, convert, and edit all your files effortlessly. Professional tools for PDF, Word, Excel, PPT, and Images in one unified workspace.
             </p>
           </div>
           <div className="absolute -right-12 -top-12 w-56 h-56 rounded-full bg-blue-500/20 blur-3xl pointer-events-none" />
