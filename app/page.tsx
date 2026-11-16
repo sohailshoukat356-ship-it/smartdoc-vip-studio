@@ -8,6 +8,7 @@ import {
   FolderOpen,
   ScanText,
   Minimize2,
+  Files,
   Sparkles,
   ArrowUpRight,
   ShieldCheck,
@@ -79,6 +80,15 @@ export default function Home() {
       shadow: "shadow-fuchsia-500/25",
       href: "/viewer",
     },
+    {
+      title: "Merge PDF & Word",
+      badge: "COMBINE",
+      desc: "Combine multiple PDF and Word (.docx) files into a single organized document",
+      icon: <Files className="w-7 h-7 text-white" />,
+      gradient: "from-sky-500 to-blue-600",
+      shadow: "shadow-sky-500/25",
+      href: "/merge",
+    },
   ];
 
   return (
@@ -131,7 +141,7 @@ export default function Home() {
           <h2 className="text-lg sm:text-xl font-bold text-slate-800">
             All-in-One Smart Tools
           </h2>
-          <span className="text-xs font-medium text-slate-500">7 Tools Ready</span>
+          <span className="text-xs font-medium text-slate-500">8 Tools Ready</span>
         </div>
 
         {/* VIP Cards Grid */}
